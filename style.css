@@ -349,3 +349,8 @@ video:-ms-fullscreen {
 video {
   transition: all 0.3s ease;
 }
+.spotify-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
