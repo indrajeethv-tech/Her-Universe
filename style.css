@@ -332,17 +332,20 @@ footer {
 .portal-star {
   display: none;
 }
-/* 🎥 FULLSCREEN VIDEO FIX (DESKTOP) */
+/* 🎥 FULLSCREEN VIDEO FIX (DESKTOP + MOBILE) */
 video:fullscreen,
-video:-webkit-full-screen {
-  width: 100% !important;
-  height: 100% !important;
+video:-webkit-full-screen,
+video:-moz-full-screen,
+video:-ms-fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
   aspect-ratio: auto !important;
-  background: black;
+  background: #000 !important;
 }
+
 video {
   transition: all 0.3s ease;
 }
